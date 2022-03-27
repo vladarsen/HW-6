@@ -5,8 +5,8 @@ public class Dog extends Animal {
 
     public Dog(String name, int age) {
         super(name, age);
-        this.maxRun = 500;
-        this.maxSwim = 10;
+        setMaxRun(500);
+        setMaxSwim(10);
         count++;
     }
 
@@ -17,8 +17,8 @@ public class Dog extends Animal {
     @Override
     public String toString() {
         return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
                 '}';
     }
 }

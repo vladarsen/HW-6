@@ -6,8 +6,8 @@ public class Cat extends Animal {
 
     public Cat(String name, int age) {
         super(name, age);
-        this.maxRun = 200;
-        this.maxSwim = 0;
+        setMaxRun(200);
+        setMaxSwim(0);
         count++;
     }
 
@@ -18,8 +18,8 @@ public class Cat extends Animal {
     @Override
     public String toString() {
         return "Cat{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
                 '}';
     }
 }

@@ -1,10 +1,10 @@
 package com.vladarsenjtev;
 
 public class Animal {
-    protected String name;
-    protected int age;
-    protected int maxRun;
-    protected int maxSwim;
+    private String name;
+    private int age;
+    private int maxRun;
+    private int maxSwim;
     private static int count;
 
     public Animal(String name, int age) {
